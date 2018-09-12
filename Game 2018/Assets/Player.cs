@@ -11,6 +11,8 @@ public class Player : MonoBehaviour {
     public Camera PlayerCamera;
     private Rigidbody rigidbody;
 
+    private float tempFloat;
+
     void Start()
     {
         rigidbody = GetComponent<Rigidbody>();
