@@ -25,6 +25,8 @@ public class PlayerWeaponController : MonoBehaviour {
 
     private void Fire(int damage)
     {
+        CurrentGun.OnFired();
+
         RaycastHit hit;
 
         if (Physics.Raycast(playerCamera.transform.position, playerCamera.transform.forward, out hit))
